@@ -9,6 +9,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        app:srcCompat="@drawable/ic_main"
+        tools:ignore="VectorDrawableCompat" />
+
     <TextView
         android:id="@+id/tv_app_name"
         android:layout_width="match_parent"
@@ -39,30 +47,21 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:fontFamily="@font/palanquin"
-                android:text="@string/welcome"
-                android:textColor="@color/dark_gray"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:fontFamily="@font/palanquin"
                 android:gravity="center"
                 android:text="@string/please_enter_your_name"
-                android:textColor="@color/light_gray"
-                android:textSize="16sp"
+                android:textColor="@color/dark_gray"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                >
 
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/et_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/palanquin"
